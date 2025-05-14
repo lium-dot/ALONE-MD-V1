@@ -1,1 +1,490 @@
-const _0x32c92f=_0x738c;(function(_0x401db5,_0x2d6423){const _0x48a208=_0x738c,_0x501ec3=_0x401db5();while(!![]){try{const _0x1d7812=parseInt(_0x48a208(0x1e7))/0x1+parseInt(_0x48a208(0x1f3))/0x2*(parseInt(_0x48a208(0x1c7))/0x3)+parseInt(_0x48a208(0x1ee))/0x4+parseInt(_0x48a208(0x1bb))/0x5*(parseInt(_0x48a208(0x1ea))/0x6)+parseInt(_0x48a208(0x1da))/0x7*(-parseInt(_0x48a208(0x1be))/0x8)+-parseInt(_0x48a208(0x1dc))/0x9+-parseInt(_0x48a208(0x1e9))/0xa;if(_0x1d7812===_0x2d6423)break;else _0x501ec3['push'](_0x501ec3['shift']());}catch(_0x153ebd){_0x501ec3['push'](_0x501ec3['shift']());}}}(_0x9cdb,0x7eab4));const {zokou}=require('../framework/zokou'),{getMessagesAndXPByJID,getBottom10Users}=require(_0x32c92f(0x1d6));function _0x738c(_0x58a5c8,_0xdb1a18){const _0x9cdbe4=_0x9cdb();return _0x738c=function(_0x738c4f,_0xda1faf){_0x738c4f=_0x738c4f-0x1b8;let _0x1a724a=_0x9cdbe4[_0x738c4f];return _0x1a724a;},_0x738c(_0x58a5c8,_0xdb1a18);}function _0x9cdb(){const _0x43f836=['profilePictureUrl','split','rank','gettorank','GURL','\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20*Role\x20:*\x20','../bdd/level','\x0a*Role\x20:*\x20','┏━━┛\x20Tech\x20mob\x20┗━━┓\x0a\x0a','120363295141350550@newsletter','3444EBGrYW','Hermit\x20seinin','3357234IrwIww','\x0a┏━━━┛\x20Alone\x20Md\x20rank\x20menu\x20┗━━━┓\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20*Name\x20:*\x20@','kage','level','Ninja-jonin','Fun','strong\x20ninja','kid-Ninja','GOD','\x0a\x0a\x20\x20\x20\x20*Messages\x20:*\x20','Ninja-genin','510952jyWvgf','Daily\x20Quote','4381800BNqzWg','564DBHggt','exports','\x0a\x0a\x20\x20\x20┕━✿━┑\x20tech\x20mob\x20┍━✿━┙','jid','2342984izhmEi','kid\x20ninja','level-GOD','exp','push','1306yqEcYu','ALONE\x20Queen\x20MD\x20V²','-----------------------\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20*Name\x20:*\x20@','length','\x0a\x0a\x20\x20*Role\x20:*\x20','\x0a*Level\x20:*\x20','Here\x27s\x20an\x20inspiring\x20quote\x20to\x20motivate\x20you!','16600DCGwxY','Tech\x20mob\x20project\x20','image','15848nDlWPM','toprank','\x0a┏━━━┛\x20ALONE\x20MD\x20rank\x20menu\x20\x20┗━━━┓\x0a\x20\x20\x20\x20\x20\x0a\x20\x20*Name\x20:*\x20','Nouveau\x20né(e)','\x0a\x0a\x20\x20*Level\x20:*\x20','xplimit','baby','Ninja-chunin','messages','4116rUmhDy','sendMessage','xpThreshold','\x0a\x0a\x20\x20*EXP\x20:*\x20','ANBU','URL','Zk-GOD','Otsusuki','\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20*Level\x20:*\x20'];_0x9cdb=function(){return _0x43f836;};return _0x9cdb();}function get_level_exp(_0xfa3f3){const _0x3e36d5=_0x32c92f,_0x5462e8=[{'level':0x1,'xpThreshold':0x1f4},{'level':0x2,'xpThreshold':0x3e8},{'level':0x3,'xpThreshold':0x7d0},{'level':0x4,'xpThreshold':0xfa0},{'level':0x5,'xpThreshold':0x1b58},{'level':0x6,'xpThreshold':0x2710},{'level':0x7,'xpThreshold':0x3a98},{'level':0x8,'xpThreshold':0x4e20},{'level':0x9,'xpThreshold':0x61a8},{'level':0xa,'xpThreshold':0x7530},{'level':0xb,'xpThreshold':0x88b8},{'level':0xc,'xpThreshold':0xafc8},{'level':0xd,'xpThreshold':0xd6d8},{'level':0xe,'xpThreshold':0xfde8},{'level':0xf,'xpThreshold':0x124f8},{'level':0x10,'xpThreshold':0x15f90},{'level':0x11,'xpThreshold':0x19a28},{'level':0x12,'xpThreshold':0x1d4c0},{'level':0x13,'xpThreshold':0x20f58},{'level':0x14,'xpThreshold':0x249f0},{'level':0x15,'xpThreshold':0x29810},{'level':0x16,'xpThreshold':0x2e630},{'level':0x17,'xpThreshold':0x33450},{'level':0x18,'xpThreshold':0x38270},{'level':0x19,'xpThreshold':0x3e418},{'level':0x1a,'xpThreshold':0x41eb0},{'level':0x1b,'xpThreshold':0x48058},{'level':0x1c,'xpThreshold':0x4e200},{'level':0x1d,'xpThreshold':0x543a8},{'level':0x1e,'xpThreshold':0x5dfe8},{'level':0x1f,'xpThreshold':0x67c28},{'level':0x20,'xpThreshold':0x71868},{'level':0x21,'xpThreshold':0x7b4a8},{'level':0x22,'xpThreshold':0x850e8},{'level':0x23,'xpThreshold':0x900b0},{'level':0x24,'xpThreshold':0x9b078},{'level':0x25,'xpThreshold':0xa6040},{'level':0x26,'xpThreshold':0xb1008},{'level':0x27,'xpThreshold':0xbbfd0},{'level':0x28,'xpThreshold':0xc8320},{'level':0x29,'xpThreshold':0xd4670},{'level':0x2a,'xpThreshold':0xe09c0},{'level':0x2b,'xpThreshold':0xecd10},{'level':0x2c,'xpThreshold':0xf9060},{'level':0x2d,'xpThreshold':0x106738},{'level':0x2e,'xpThreshold':0x113e10},{'level':0x2f,'xpThreshold':0x1214e8},{'level':0x30,'xpThreshold':0x12ebc0},{'level':0x31,'xpThreshold':0x13c298},{'level':_0x3e36d5(0x1cd),'xpThreshold':0x1e8480}];let _0x221ac1=0x0,_0x5a151d=_0xfa3f3,_0x4d1d74=_0x5462e8[_0x221ac1][_0x3e36d5(0x1c9)];for(let _0x450b96=0x0;_0x450b96<_0x5462e8[_0x3e36d5(0x1f6)];_0x450b96++){if(_0xfa3f3>=_0x5462e8[_0x450b96]['xpThreshold'])_0x221ac1=_0x5462e8[_0x450b96]['level'],_0x4d1d74=_0x5462e8[_0x450b96+0x1]?.[_0x3e36d5(0x1c9)]||'No-limit',_0x5a151d=_0xfa3f3-_0x5462e8[_0x450b96][_0x3e36d5(0x1c9)];else break;}return{'level':_0x221ac1,'xplimit':_0x4d1d74,'exp':_0x5a151d};}module[_0x32c92f(0x1eb)]={'get_level_exp':get_level_exp},zokou({'nomCom':_0x32c92f(0x1d2),'categorie':_0x32c92f(0x1e1)},async(_0x48d25c,_0x5d50b2,_0xf1406a)=>{const _0x390e19=_0x32c92f,{ms:_0x2c2994,repondre:_0x1c7f98,auteurMessage:_0x5db3bb,nomAuteurMessage:_0x22e1d5,msgRepondu:_0x5d4a5c,auteurMsgRepondu:_0x1d065a,mybotpic:_0x48bcad}=_0xf1406a;if(_0x5d4a5c)try{let _0x57c220=await getMessagesAndXPByJID(_0x1d065a);const _0xb306cf=await get_level_exp(_0x57c220['xp']);let _0x3f16d0;try{_0x3f16d0=await _0x5d50b2[_0x390e19(0x1d0)](_0x1d065a,_0x390e19(0x1bd));}catch{_0x3f16d0=_0x48bcad();};let _0x4b69fd;if(_0xb306cf[_0x390e19(0x1df)]<0x5)_0x4b69fd=_0x390e19(0x1c4);else{if(_0xb306cf[_0x390e19(0x1df)]>=0x5&&_0xb306cf[_0x390e19(0x1df)]<0xa)_0x4b69fd=_0x390e19(0x1e3);else{if(_0xb306cf['level']>=0xa&&_0xb306cf[_0x390e19(0x1df)]<0xf)_0x4b69fd=_0x390e19(0x1e6);else{if(_0xb306cf['level']>=0xf&&_0xb306cf['level']<0x14)_0x4b69fd=_0x390e19(0x1c5);else{if(_0xb306cf[_0x390e19(0x1df)]>=0x14&&_0xb306cf[_0x390e19(0x1df)]<0x19)_0x4b69fd='Ninja-jonin';else{if(_0xb306cf[_0x390e19(0x1df)]>=0x19&&_0xb306cf['level']<0x1e)_0x4b69fd=_0x390e19(0x1cb);else{if(_0xb306cf['level']>=0x1e&&_0xb306cf[_0x390e19(0x1df)]<0x23)_0x4b69fd='strong\x20ninja';else{if(_0xb306cf['level']>=0x23&&_0xb306cf['level']<0x28)_0x4b69fd=_0x390e19(0x1de);else{if(_0xb306cf['level']>=0x28&&_0xb306cf[_0x390e19(0x1df)]<0x2d)_0x4b69fd=_0x390e19(0x1db);else _0xb306cf['level']>=0x2d&&_0xb306cf[_0x390e19(0x1df)]<0x32?_0x4b69fd='Otsusuki':_0x4b69fd=_0x390e19(0x1e4);}}}}}}}}let _0x5727f1=_0x390e19(0x1dd)+_0x1d065a['split']('@')[0x0]+_0x390e19(0x1cf)+_0xb306cf['level']+'\x0a\x20\x20\x20\x20\x0a\x20\x20\x20\x20*EXP\x20:*\x20'+_0xb306cf[_0x390e19(0x1f1)]+'/'+_0xb306cf['xplimit']+_0x390e19(0x1d5)+_0x4b69fd+_0x390e19(0x1e5)+_0x57c220[_0x390e19(0x1c6)]+'\x0a\x20\x20\x20\x20\x0a\x20\x20\x20┕━✿━┑\x20\x20tech\x20mob\x20┍━✿━┙';_0x5d50b2[_0x390e19(0x1c8)](_0x48d25c,{'caption':_0x5727f1,'mentions':[_0x1d065a],'contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':'120363295141350550@newsletter','newsletterName':_0x390e19(0x1f4),'serverMessageId':0x8f},'externalAdReply':{'title':'ALONE\x20MD\x20RANKED\x20SUCCESSFULLY','body':'View\x20channel\x20for\x20updates','thumbnailUrl':conf[_0x390e19(0x1cc)],'sourceUrl':{'url':_0x3f16d0},'mediaType':0x1}}},{'quoted':_0x2c2994});}catch(_0x39712c){_0x1c7f98(_0x39712c);}else try{let _0x3cc015=_0x5db3bb,_0x5267ae=await getMessagesAndXPByJID(_0x3cc015);const _0x889946=get_level_exp(_0x5267ae['xp']);let _0x221354;try{_0x221354=await _0x5d50b2[_0x390e19(0x1d0)](_0x3cc015,'image');}catch{_0x221354=_0x48bcad();};let _0x297e8a;if(_0x889946['level']<0x5)_0x297e8a=_0x390e19(0x1c1);else{if(_0x889946[_0x390e19(0x1df)]>=0x5&&_0x889946[_0x390e19(0x1df)]<0xa)_0x297e8a=_0x390e19(0x1e3);else{if(_0x889946[_0x390e19(0x1df)]>=0xa&&_0x889946[_0x390e19(0x1df)]<0xf)_0x297e8a=_0x390e19(0x1e6);else{if(_0x889946[_0x390e19(0x1df)]>=0xf&&_0x889946[_0x390e19(0x1df)]<0x14)_0x297e8a=_0x390e19(0x1c5);else{if(_0x889946[_0x390e19(0x1df)]>=0x14&&_0x889946['level']<0x19)_0x297e8a='Ninja-jonin';else{if(_0x889946[_0x390e19(0x1df)]>=0x19&&_0x889946[_0x390e19(0x1df)]<0x1e)_0x297e8a=_0x390e19(0x1cb);else{if(_0x889946['level']>=0x1e&&_0x889946[_0x390e19(0x1df)]<0x23)_0x297e8a=_0x390e19(0x1e2);else{if(_0x889946['level']>=0x23&&_0x889946['level']<0x28)_0x297e8a=_0x390e19(0x1de);else{if(_0x889946[_0x390e19(0x1df)]>=0x28&&_0x889946[_0x390e19(0x1df)]<0x2d)_0x297e8a=_0x390e19(0x1db);else _0x889946[_0x390e19(0x1df)]>=0x2d&&_0x889946[_0x390e19(0x1df)]<0x32?_0x297e8a=_0x390e19(0x1ce):_0x297e8a=_0x390e19(0x1f0);}}}}}}}}let _0x33121b=_0x390e19(0x1c0)+_0x22e1d5+_0x390e19(0x1c2)+_0x889946[_0x390e19(0x1df)]+_0x390e19(0x1ca)+_0x889946[_0x390e19(0x1f1)]+'/'+_0x889946[_0x390e19(0x1c3)]+_0x390e19(0x1b8)+_0x297e8a+'\x0a\x0a\x20\x20*Messages\x20:*\x20'+_0x5267ae[_0x390e19(0x1c6)]+_0x390e19(0x1ec);_0x5d50b2[_0x390e19(0x1c8)](_0x48d25c,{'image':{'url':_0x221354},'caption':_0x33121b},{'quoted':_0x2c2994});}catch(_0x3c3be6){_0x1c7f98(_0x3c3be6);}}),zokou({'nomCom':_0x32c92f(0x1bf),'categorie':_0x32c92f(0x1e1)},async(_0x42d205,_0x4e7364,_0x10ca9b)=>{const _0x261c6d=_0x32c92f,{ms:_0x144b72,mybotpic:_0x451e5a}=_0x10ca9b;let _0x1b933e=_0x261c6d(0x1d8),_0x17bacc=await getBottom10Users(),_0x431a87=[];for(const _0x5d884b of _0x17bacc){const _0x4321d6=await get_level_exp(_0x5d884b['xp']);let _0x6d0f7;if(_0x4321d6[_0x261c6d(0x1df)]<0x5)_0x6d0f7=_0x261c6d(0x1c1);else{if(_0x4321d6['level']>=0x5&&_0x4321d6[_0x261c6d(0x1df)]<0xa)_0x6d0f7=_0x261c6d(0x1ef);else{if(_0x4321d6[_0x261c6d(0x1df)]>=0xa&&_0x4321d6['level']<0xf)_0x6d0f7=_0x261c6d(0x1e6);else{if(_0x4321d6[_0x261c6d(0x1df)]>=0xf&&_0x4321d6[_0x261c6d(0x1df)]<0x14)_0x6d0f7=_0x261c6d(0x1c5);else{if(_0x4321d6['level']>=0x14&&_0x4321d6[_0x261c6d(0x1df)]<0x19)_0x6d0f7=_0x261c6d(0x1e0);else{if(_0x4321d6['level']>=0x19&&_0x4321d6[_0x261c6d(0x1df)]<0x1e)_0x6d0f7=_0x261c6d(0x1cb);else{if(_0x4321d6[_0x261c6d(0x1df)]>=0x1e&&_0x4321d6['level']<0x23)_0x6d0f7='strong\x20ninja';else{if(_0x4321d6[_0x261c6d(0x1df)]>=0x23&&_0x4321d6['level']<0x28)_0x6d0f7=_0x261c6d(0x1de);else{if(_0x4321d6['level']>=0x28&&_0x4321d6[_0x261c6d(0x1df)]<0x2d)_0x6d0f7=_0x261c6d(0x1db);else _0x4321d6[_0x261c6d(0x1df)]>=0x2d&&_0x4321d6['level']<0x32?_0x6d0f7='Otsusuki':_0x6d0f7=_0x261c6d(0x1f0);}}}}}}}}_0x1b933e+=_0x261c6d(0x1f5)+_0x5d884b['jid']['split']('@')[0x0]+'\x0a*Level\x20:*\x20'+_0x4321d6[_0x261c6d(0x1df)]+_0x261c6d(0x1d7)+_0x6d0f7+'\x0a',_0x431a87['push'](_0x5d884b['jid']);}_0x4e7364[_0x261c6d(0x1c8)](_0x42d205,{'caption':_0x1b933e,'mentions':_0x431a87,'contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x261c6d(0x1d9),'newsletterName':_0x261c6d(0x1bc),'serverMessageId':0x8f},'externalAdReply':{'title':_0x261c6d(0x1e8),'body':'Here\x27s\x20an\x20inspiring\x20quote\x20to\x20motivate\x20you!','thumbnailUrl':conf[_0x261c6d(0x1cc)],'sourceUrl':conf['GURL'],'mediaType':0x1}}},{'quoted':_0x144b72});}),zokou({'nomCom':_0x32c92f(0x1d3),'categorie':_0x32c92f(0x1e1)},async(_0x384859,_0x30ddc5,_0x4acf1c)=>{const _0x37c7bf=_0x32c92f,{ms:_0x66fbf8,mybotpic:_0x3fb08d}=_0x4acf1c;let _0x434d2b=_0x37c7bf(0x1d8),_0x5db9f5=await getBottom10Users(),_0xb984d0=[];for(const _0x2c0cc7 of _0x5db9f5){const _0x4c8f0a=await get_level_exp(_0x2c0cc7['xp']);let _0x431e7e;if(_0x4c8f0a[_0x37c7bf(0x1df)]<0x5)_0x431e7e=_0x37c7bf(0x1c1);else{if(_0x4c8f0a[_0x37c7bf(0x1df)]>=0x5&&_0x4c8f0a['level']<0xa)_0x431e7e=_0x37c7bf(0x1ef);else{if(_0x4c8f0a[_0x37c7bf(0x1df)]>=0xa&&_0x4c8f0a['level']<0xf)_0x431e7e=_0x37c7bf(0x1e6);else{if(_0x4c8f0a[_0x37c7bf(0x1df)]>=0xf&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x14)_0x431e7e=_0x37c7bf(0x1c5);else{if(_0x4c8f0a['level']>=0x14&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x19)_0x431e7e=_0x37c7bf(0x1e0);else{if(_0x4c8f0a['level']>=0x19&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x1e)_0x431e7e=_0x37c7bf(0x1cb);else{if(_0x4c8f0a[_0x37c7bf(0x1df)]>=0x1e&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x23)_0x431e7e=_0x37c7bf(0x1e2);else{if(_0x4c8f0a[_0x37c7bf(0x1df)]>=0x23&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x28)_0x431e7e=_0x37c7bf(0x1de);else{if(_0x4c8f0a['level']>=0x28&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x2d)_0x431e7e=_0x37c7bf(0x1db);else _0x4c8f0a['level']>=0x2d&&_0x4c8f0a[_0x37c7bf(0x1df)]<0x32?_0x431e7e=_0x37c7bf(0x1ce):_0x431e7e=_0x37c7bf(0x1f0);}}}}}}}}_0x434d2b+=_0x37c7bf(0x1f5)+_0x2c0cc7[_0x37c7bf(0x1ed)][_0x37c7bf(0x1d1)]('@')[0x0]+_0x37c7bf(0x1b9)+_0x4c8f0a[_0x37c7bf(0x1df)]+'\x0a*Role\x20:*\x20'+_0x431e7e+'\x0a',_0xb984d0[_0x37c7bf(0x1f2)](_0x2c0cc7['jid']);}_0x30ddc5[_0x37c7bf(0x1c8)](_0x384859,{'caption':_0x434d2b,'mentions':_0xb984d0,'contextInfo':{'forwardingScore':0x3e7,'isForwarded':!![],'forwardedNewsletterMessageInfo':{'newsletterJid':_0x37c7bf(0x1d9),'newsletterName':_0x37c7bf(0x1bc),'serverMessageId':0x8f},'externalAdReply':{'title':_0x37c7bf(0x1e8),'body':_0x37c7bf(0x1ba),'thumbnailUrl':conf[_0x37c7bf(0x1cc)],'sourceUrl':conf[_0x37c7bf(0x1d4)],'mediaType':0x1}}},{'quoted':_0x66fbf8});});
+const {getMessagesAndXPByJID,getBottom10Users} = require("../bdd/level");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const util = require('util');
+const fs = require('fs-extra');
+const axios = require('axios');
+const { zokou } = require(__dirname + "/../framework/zokou");
+const os = require("os");
+const moment = require("moment-timezone");
+const conf = require(__dirname + "/../set");
+
+const AUDIO_URL = "https://files.catbox.moe/hrf957.mp3"; // New audio URL
+const THUMBNAIL_URL = "https://files.catbox.moe/yedfbr.jpg"; // New image URL
+
+moment.tz.setDefault(`${conf.TZ}`);
+
+const getTimeAndDate = () => {
+    return {
+        time: moment().format('HH:mm:ss'),
+        date: moment().format('DD/MM/YYYY')
+    };
+};
+
+// Ping Command
+zokou({ nomCom: "bot", categorie: "General" }, async (dest, zk, commandeOptions) => {
+    let { ms } = commandeOptions;
+    const { time, date } = getTimeAndDate();
+    const ping = Math.floor(Math.random() * 1000) + 1; // Generate a random ping between 1ms - 100ms
+
+    try {
+    await zk.sendMessage(dest, {
+        audio: { url: AUDIO_URL }, 
+            mimetype: 'audio/mp4', 
+            ptt: true, // Voice note form
+      text: "i am here ..command me now🏆....",
+      contextInfo: {
+        forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363295141350550@newsletter',
+              newsletterName: 'Tech mob projects',
+              serverMessageId: 143},
+        externalAdReply: {
+          
+          title: "Follow for updates 🩸",
+      body: "Enjoy...",
+      thumbnailUrl:  conf.URL,
+          sourceUrl: conf.GURL,
+          mediaType: 1,
+          
+        }
+      }
+    }, { quoted: ms });
+
+    await zk.sendMessage(dest, {
+        text: "```The bot is active..✓```"
+    } ,{ quoted: ms });// Voice note form
+    }catch (e) {
+        console.log("❌ Ping Command Error: " + e);
+        repondre("❌ Error: " + e);
+    }
+});
+function get_level_exp(xp) {
+    const levelThresholds = [
+        { level: 1, xpThreshold: 500 },
+        { level: 2, xpThreshold: 1000 },
+        { level: 3, xpThreshold: 2000 },
+        { level: 4, xpThreshold: 4000 },
+        { level: 5, xpThreshold: 7000 },
+        { level: 6, xpThreshold: 10000 },
+        { level: 7, xpThreshold: 15000 },
+        { level: 8, xpThreshold: 20000},
+        { level: 9, xpThreshold: 25000},
+        { level: 10, xpThreshold: 30000},
+        { level: 11, xpThreshold: 35000},
+        { level: 12, xpThreshold: 45000},
+        { level: 13, xpThreshold: 55000},
+        { level: 14, xpThreshold: 65000},
+        { level: 15, xpThreshold: 75000},
+        { level: 16, xpThreshold: 90000},
+        { level: 17, xpThreshold: 105000},
+        { level: 18, xpThreshold: 120000},
+        { level: 19, xpThreshold: 135000},
+        { level: 20, xpThreshold: 150000},
+        { level: 21, xpThreshold: 170000},
+        { level: 22, xpThreshold: 190000},
+        { level: 23, xpThreshold: 210000},
+        { level: 24, xpThreshold: 230000},
+        { level: 25, xpThreshold: 255000},
+        { level: 26, xpThreshold: 270000},
+        { level: 27, xpThreshold: 295000},
+        { level: 28, xpThreshold: 320000},
+        { level: 29, xpThreshold: 345000},
+        { level: 30, xpThreshold: 385000},
+        { level: 31, xpThreshold: 425000},
+        { level: 32, xpThreshold: 465000},
+        { level: 33, xpThreshold: 505000},
+        { level: 34, xpThreshold: 545000},
+        { level: 35, xpThreshold: 590000},
+        { level: 36, xpThreshold: 635000},
+        { level: 37, xpThreshold: 680000},
+        { level: 38, xpThreshold: 725000},
+        { level: 39, xpThreshold: 770000},
+        { level: 40, xpThreshold: 820000},
+        { level: 41, xpThreshold: 870000},
+        { level: 42, xpThreshold: 920000},
+        { level: 43, xpThreshold: 970000},
+        { level: 44, xpThreshold: 1020000},
+        { level: 45, xpThreshold: 1075000},
+        { level: 46, xpThreshold: 1130000},
+        { level: 47, xpThreshold: 1185000},
+        { level: 48, xpThreshold: 1240000},
+        { level: 49, xpThreshold: 1295000},
+        { level: 'Zk-GOD', xpThreshold: 2000000}
+    ];
+
+    let level = 0;
+    let exp = xp;
+    let xplimit = levelThresholds[level].xpThreshold;
+
+    for (let i = 0; i < levelThresholds.length; i++) {
+        if (xp >= levelThresholds[i].xpThreshold) {
+            level = levelThresholds[i].level;
+            xplimit = levelThresholds[i + 1]?.xpThreshold || 'No-limit';
+            exp = xp - levelThresholds[i].xpThreshold;
+        } else {
+            break;
+        }
+    }
+
+    return {
+        level: level,
+        xplimit: xplimit,
+        exp: exp
+    };
+}
+
+module.exports = {
+   get_level_exp,
+} ;
+
+zokou( {
+  nomCom : "rank",
+ categorie : "Fun",
+   }, 
+   async(dest,zk, commandeOptions)=> {
+  
+    const {ms , repondre,auteurMessage,nomAuteurMessage, msgRepondu , auteurMsgRepondu , mybotpic} = commandeOptions ;
+
+  if (msgRepondu) {
+      
+       try {
+          
+        let rank = await getMessagesAndXPByJID(auteurMsgRepondu) ;
+
+        const data = await get_level_exp(rank.xp)
+         let ppuser ;
+    
+         
+         try {
+              ppuser = await zk.profilePictureUrl(auteurMsgRepondu , 'image') ;
+         } catch {
+            ppuser = mybotpic()
+         } ;
+    
+    
+         let role ;
+    
+         if (data.level < 5) {
+            role = 'baby'
+         } else if (data.level >= 5 && data.level < 10) {
+            role = 'kid-Ninja'
+         } else if ( data.level >= 10 && data.level < 15 ) {
+            role = 'Ninja-genin'
+         } else if ( data.level >= 15 && data.level < 20 ) {
+            role = 'Ninja-chunin'
+         } else if ( data.level >= 20 && data.level < 25 ) {
+            role = 'Ninja-jonin'
+         } else if ( data.level >= 25 && data.level < 30 ) {
+            role = 'ANBU'
+         } else if ( data.level >= 30 && data.level < 35 ) {
+            role = 'strong ninja'
+         } else if ( data.level >= 35 && data.level < 40 ) {
+            role = 'kage'
+         } else if ( data.level >= 40 && data.level < 45 ) {
+            role = 'Hermit seinin'
+         } else if ( data.level >= 45 && data.level < 50 ) {
+            role = 'Otsusuki'
+         } else {
+            role = 'GOD'
+         }
+    
+    
+         let msg = `
+┏━━━┛ Alone Md rank menu ┗━━━┓
+         
+    *Name :* @${auteurMsgRepondu.split("@")[0]}
+    
+    *Level :* ${data.level}
+    
+    *EXP :* ${data.exp}/${data.xplimit}
+    
+    *Role :* ${role}
+
+    *Messages :* ${rank.messages}
+    
+   ┕━✿━┑  tech mob ┍━✿━┙`
+    
+     zk.sendMessage( 
+        dest,
+        {
+            caption : msg,
+            mentions : [auteurMsgRepondu]
+        ,contextInfo: {
+        forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363295141350550@newsletter',
+              newsletterName: 'ALONE Queen MD V²',
+              serverMessageId: 143},
+        externalAdReply: {
+          title: "ALONE MD RANKED SUCCESSFULLY",
+          body: "View channel for updates",
+          thumbnailUrl: {url : ppuser},
+          sourceUrl: conf.GURL,
+          mediaType: 1,
+        
+        }
+      }
+    }, 
+        {quoted : ms}
+      )
+
+
+       } catch (error) {
+         repondre(error)
+       }
+  }   else {
+
+
+      try {
+        
+        let jid = auteurMessage ;
+          
+        let rang = await getMessagesAndXPByJID(jid) ;
+
+        const data =  get_level_exp(rang.xp)
+         let ppuser ;
+    
+         
+         try {
+              ppuser = await zk.profilePictureUrl(jid, 'image') ;
+         } catch {
+            ppuser = mybotpic()
+         } ;
+    
+    
+         let role ;
+    
+         if (data.level < 5) {
+            role = 'Nouveau né(e)'
+         } else if (data.level >= 5 && data.level < 10) {
+            role = 'kid-Ninja'
+         } else if ( data.level >= 10 && data.level < 15 ) {
+            role = 'Ninja-genin'
+         } else if ( data.level >= 15 && data.level < 20 ) {
+            role = 'Ninja-chunin'
+         } else if ( data.level >= 20 && data.level < 25 ) {
+            role = 'Ninja-jonin'
+         } else if ( data.level >= 25 && data.level < 30 ) {
+            role = 'ANBU'
+         } else if ( data.level >= 30 && data.level < 35 ) {
+            role = 'strong ninja'
+         } else if ( data.level >= 35 && data.level < 40 ) {
+            role = 'kage'
+         } else if ( data.level >= 40 && data.level < 45 ) {
+            role = 'Hermit seinin'
+         } else if ( data.level >= 45 && data.level < 50 ) {
+            role = 'Otsusuki'
+         } else {
+            role = 'level-GOD'
+         }
+    
+    
+         let msg = `
+┏━━━┛ ALONE MD rank menu  ┗━━━┓
+     
+  *Name :* ${nomAuteurMessage}
+
+  *Level :* ${data.level}
+
+  *EXP :* ${data.exp}/${data.xplimit}
+
+  *Role :* ${role}
+
+  *Messages :* ${rang.messages}
+
+   ┕━✿━┑ tech mob ┍━✿━┙`
+    
+     zk.sendMessage( 
+        dest,
+        {
+            image : {url : ppuser},
+            caption : msg
+        },
+        {quoted : ms}
+      )
+
+      } catch (error) {
+         repondre(error)
+      }
+
+    } 
+
+
+}) ;
+
+zokou( {
+  nomCom : "toprank",
+ categorie : "Fun",
+   }, 
+   async(dest,zk, commandeOptions)=> {
+  
+    const {ms , mybotpic} = commandeOptions ;
+
+
+       let msg = `┏━━┛ Tech mob ┗━━┓\n\n`
+       
+      let topRanks = await getBottom10Users() ;
+        let mention = [] ;
+        for (const rank of topRanks ) {
+
+             const data = await get_level_exp(rank.xp) ;
+
+             let role ;
+    
+         if (data.level < 5) {
+            role = 'Nouveau né(e)'
+         } else if (data.level >= 5 && data.level < 10) {
+            role = 'kid ninja'
+         } else if ( data.level >= 10 && data.level < 15 ) {
+            role = 'Ninja-genin'
+         } else if ( data.level >= 15 && data.level < 20 ) {
+            role = 'Ninja-chunin'
+         } else if ( data.level >= 20 && data.level < 25 ) {
+            role = 'Ninja-jonin'
+         } else if ( data.level >= 25 && data.level < 30 ) {
+            role = 'ANBU'
+         } else if ( data.level >= 30 && data.level < 35 ) {
+            role = 'strong ninja'
+         } else if ( data.level >= 35 && data.level < 40 ) {
+            role = 'kage'
+         } else if ( data.level >= 40 && data.level < 45 ) {
+            role = 'Hermit seinin'
+         } else if ( data.level >= 45 && data.level < 50 ) {
+            role = 'Otsusuki'
+         } else {
+            role = 'level-GOD'
+         }
+            msg += `-----------------------
+            
+ *Name :* @${rank.jid.split("@")[0]}
+*Level :* ${data.level}
+*Role :* ${role}\n` ;
+
+        mention.push(rank.jid) ;
+        }
+
+       zk.sendMessage(dest,
+                      {
+                
+                        caption : msg,
+                        mentions : mention
+                      ,contextInfo: {
+        forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363295141350550@newsletter',
+              newsletterName: 'Tech mob project ',
+              serverMessageId: 143},
+        externalAdReply: {
+          title: "Daily Quote",
+          body: "Here's an inspiring quote to motivate you!",
+          thumbnailUrl: conf.URL,
+          sourceUrl: conf.GURL,
+          mediaType: 1,
+        
+        }
+      }
+    }, 
+                      {quoted : ms})
+       
+
+   });
+zokou( {
+  nomCom : "gettorank",
+ categorie : "Fun",
+   }, 
+   async(dest,zk, commandeOptions)=> {
+  
+    const {ms , mybotpic} = commandeOptions ;
+
+
+       let msg = `┏━━┛ Tech mob ┗━━┓\n\n`
+       
+      let topRanks = await getBottom10Users() ;
+        let mention = [] ;
+        for (const rank of topRanks ) {
+
+             const data = await get_level_exp(rank.xp) ;
+
+             let role ;
+    
+         if (data.level < 5) {
+            role = 'Nouveau né(e)'
+         } else if (data.level >= 5 && data.level < 10) {
+            role = 'kid ninja'
+         } else if ( data.level >= 10 && data.level < 15 ) {
+            role = 'Ninja-genin'
+         } else if ( data.level >= 15 && data.level < 20 ) {
+            role = 'Ninja-chunin'
+         } else if ( data.level >= 20 && data.level < 25 ) {
+            role = 'Ninja-jonin'
+         } else if ( data.level >= 25 && data.level < 30 ) {
+            role = 'ANBU'
+         } else if ( data.level >= 30 && data.level < 35 ) {
+            role = 'strong ninja'
+         } else if ( data.level >= 35 && data.level < 40 ) {
+            role = 'kage'
+         } else if ( data.level >= 40 && data.level < 45 ) {
+            role = 'Hermit seinin'
+         } else if ( data.level >= 45 && data.level < 50 ) {
+            role = 'Otsusuki'
+         } else {
+            role = 'level-GOD'
+         }
+            msg += `-----------------------
+            
+ *Name :* @${rank.jid.split("@")[0]}
+*Level :* ${data.level}
+*Role :* ${role}\n` ;
+
+        mention.push(rank.jid) ;
+        }
+
+       zk.sendMessage(dest,
+                      {
+
+                        caption : msg,
+                        mentions : mention
+                      ,contextInfo: {
+        forwardingScore: 999,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+              newsletterJid: '120363295141350550@newsletter',
+              newsletterName: 'Tech mob project ',
+              serverMessageId: 143},
+        externalAdReply: {
+          title: "Daily Quote",
+          body: "Here's an inspiring quote to motivate you!",
+          thumbnailUrl: conf.URL,
+          sourceUrl: conf.GURL,
+          mediaType: 1,
+        
+        }
+      }
+    }, 
+                      {quoted : ms})
+       
+
+   });
+
+
+
+
+
+   
+    
