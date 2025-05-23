@@ -24,7 +24,7 @@ module.exports = { session: process.env.SESSION_ID || 'eyJub2lzZUtleSI6eyJwcml2Y
     AUTO_READ_MESSAGES: process.env.AUTO_READ_MESSAGES || "no",
     GCF: process.env.GROUP_CONTROL || 'no', 
     GREET : process.env.GREET || "yes",            
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'Ꭿℒℒℰℕ ℐЅ ᏇᎯTℂℋℐℕᎶ👀 ℐℕ ᎶℋᎾЅT ℳᎾⅅℰ👻,   
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "Ꭿℒℒℰℕ ℐЅ ᏇᎯTℂℋℐℕᎶ👀 ℐℕ ᎶℋᎾЅT ℳᎾⅅℰ👻",   
     AUTOBIO: process.env.AUTOBIO || 'no',
     AUTO_BLOCK: process.env.BLOCK_ALL || 'no',              
     GURL: process.env.GURL  || "https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r",
